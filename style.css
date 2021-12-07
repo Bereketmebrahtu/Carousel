@@ -8,16 +8,20 @@ body {
 
 .carousel {
     position: relative;
-    width: 80vw;
+    width: 70vw;
     height: 80vh;
     border: 5px solid chocolate;
     border-radius: 1rem;
     overflow: hidden;
+   
 }
 
 .slides {
     position: absolute;
     inset: 0;
+    place-items: center;
+    transition: all 0.25s ease-in-out;
+    
    
 }
 .slides > img {
