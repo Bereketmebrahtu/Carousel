@@ -1,0 +1,50 @@
+
+
+
+body {
+    box-sizing: border-box;
+    margin-top: 1px;
+}
+
+.carousel {
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+    border: 5px solid chocolate;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.slides {
+    position: absolute;
+    inset: 0;
+   
+}
+.slides > img {
+    
+    object-fit: cover;
+    width: 80vw;
+    height: auto;
+   
+}
+
+.carousel > button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+ 
+}
+
+.carousel > ul {
+   margin: 0;
+
+}
+.prev-Btn {
+    left: 1rem;
+
+}
+
+.next-Btn {
+    right: 1rem;
+}
