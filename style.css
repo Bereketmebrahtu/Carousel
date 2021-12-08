@@ -1,54 +1,52 @@
 
 
-
-body {
-    box-sizing: border-box;
-    margin-top: 1px;
-}
-
 .carousel {
     position: relative;
     width: 70vw;
     height: 80vh;
-    border: 5px solid chocolate;
+    border: 5px solid black;
     border-radius: 1rem;
     overflow: hidden;
+    margin: auto;
    
 }
 
-.slides {
+.slide {
+    display: grid;
     position: absolute;
-    inset: 0;
+    width: 100%;
+    height: 100%;
     place-items: center;
     transition: all 0.25s ease-in-out;
     
    
 }
-.slides > img {
-    
+.slide > img {
     object-fit: cover;
-    width: 80vw;
+    width: 70vw;
     height: auto;
    
 }
 
-.carousel > button {
+.button-container {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  
  
 }
 
-.carousel > ul {
-   margin: 0;
 
-}
 .prev-Btn {
     left: 1rem;
+    
+    
 
 }
 
 .next-Btn {
     right: 1rem;
 }
+
+@media screen{
+   
