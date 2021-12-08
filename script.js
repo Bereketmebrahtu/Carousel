@@ -1,7 +1,7 @@
+
 const slidesEl = document.querySelectorAll('.slide');
-// const slideImagesEl = document.querySelectorAll('.slide')
 const prevBtnEl = document.querySelector('.prev-Btn');
-const nextBtnEl = document.querySelector('.next-Btn')
+const nextBtnEl = document.querySelector('.next-Btn');
 
 
 slidesEl.forEach(function(slide, index) {
@@ -11,15 +11,15 @@ slidesEl.forEach(function(slide, index) {
 let counter = 0;
 
 nextBtnEl.addEventListener('click', function(){
-    counter++;
+    counter--;
 
-    carousel()
+    carousel();
 });
 
 prevBtnEl.addEventListener('click', function(){
-    counter--;
+    counter++;
 
-    carousel()
+    carousel();
 });
 
 function carousel() {
