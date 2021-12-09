@@ -24,8 +24,17 @@ prevBtnEl.addEventListener('click', function(){
 
     carousel();
 });
+//main function, iterating through slides this time target style and use tranform property to shift slide along X-axis
 
 function carousel() {
+
+    if(counter ===slidesEl.length) {
+        counter = 0;
+    }
+    if(counter < 0) {
+        counter = slidesEl.length-1;
+    }
+
     slidesEl.forEach(function(slide){
         slide.style.transform = `translateX(-${counter * 100}%)`
     });
